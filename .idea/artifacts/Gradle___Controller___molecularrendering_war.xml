@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : Controller : molecularrendering.war">
+    <output-path>$PROJECT_DIR$/Controller/build/libs</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$" />
+    </properties>
+    <root id="archive" name="molecularrendering.war">
+      <element id="artifact" artifact-name="Gradle : Controller : molecularrendering.war (exploded)" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.tiles:tiles-request-mustache:1.0.6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-request-mustache/1.0.6/dd87a5899e27d598e5df2c2feb3bde9a35fe78ca/tiles-request-mustache-1.0.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-request-mustache/1.0.6/c1bcc22f2e3dfb1ffcea61383bd9ad7b7bdf68df/tiles-request-mustache-1.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

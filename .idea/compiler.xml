@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="Controller-Model_main" target="1.8" />
+      <module name="Controller-Model_test" target="1.8" />
+      <module name="Controller_main" target="1.8" />
+      <module name="Controller_test" target="1.8" />
+      <module name="MolecularRendering_main" target="1.8" />
+      <module name="MolecularRendering_test" target="1.8" />
+      <module name="Service_main" target="1.8" />
+      <module name="Service_test" target="1.8" />
+      <module name="SimRNA_main" target="1.8" />
+      <module name="SimRNA_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

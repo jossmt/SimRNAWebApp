@@ -1,0 +1,5 @@
+rootProject.name = 'SimRNAWebApp'
+include 'Service'
+include 'Controller'
+include 'Controller-Model'
+

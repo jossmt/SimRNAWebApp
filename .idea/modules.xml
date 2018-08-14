@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Controller/Controller.iml" filepath="$PROJECT_DIR$/.idea/modules/Controller/Controller.iml" group="Controller" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Controller-Model/Controller-Model.iml" filepath="$PROJECT_DIR$/.idea/modules/Controller-Model/Controller-Model.iml" group="Controller-Model" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Controller-Model/Controller-Model_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Controller-Model/Controller-Model_main.iml" group="Controller-Model" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Controller-Model/Controller-Model_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Controller-Model/Controller-Model_test.iml" group="Controller-Model" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Controller/Controller_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Controller/Controller_main.iml" group="Controller" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Controller/Controller_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Controller/Controller_test.iml" group="Controller" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Service/Service.iml" filepath="$PROJECT_DIR$/.idea/modules/Service/Service.iml" group="Service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Service/Service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Service/Service_main.iml" group="Service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Service/Service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Service/Service_test.iml" group="Service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SimRNA.iml" filepath="$PROJECT_DIR$/.idea/modules/SimRNA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SimRNA_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SimRNA_main.iml" group="SimRNA" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SimRNA_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SimRNA_test.iml" group="SimRNA" />
+    </modules>
+  </component>
+</project>
