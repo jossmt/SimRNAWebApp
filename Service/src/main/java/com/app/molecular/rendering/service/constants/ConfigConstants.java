@@ -8,7 +8,7 @@ public class ConfigConstants {
     public static final Double CLUSTER_THRESHOLD = 0.1;
 
     // File/Path Name Configurations
-    public static final String ROOT_DIRECTORY = "~/SIMRNA/";
+    public static final String ROOT_DIRECTORY = "/Users/jossmillertodd/SIMRNA/";
     public static final String OUTPUT_DIRECTORY = "/Output/";
     public static final String CLUSTER_OUTPUT_FILENAME = "%s_ALL_thrs.*A_clust01-000001_AA.pdb";
     public static final String SS_OUTPUT_FILENAME = "%s_ALL_thrs.*A_clust01-000001.ss_detected";

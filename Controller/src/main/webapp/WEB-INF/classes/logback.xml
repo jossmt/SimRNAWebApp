@@ -3,7 +3,7 @@
 
     <appender name="FILE-AUDIT"
               class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>~/logs/molecularrendering.log</file>
+        <file>/Users/jossmillertodd/Documents/SimRNAWebApp/Controller/logs/molecularrendering.log</file>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <Pattern>
                 %d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n
@@ -13,7 +13,7 @@
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- rollover daily -->
             <fileNamePattern>
-                ~/logs/molecularrendering.%d{yyyy-MM-dd}.%i.log
+                /Users/jossmillertodd/Documents/SimRNAWebApp/Controller/logs/molecularrendering.%d{yyyy-MM-dd}.%i.log
             </fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy
                     class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
