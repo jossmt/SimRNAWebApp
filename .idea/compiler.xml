@@ -12,6 +12,8 @@
       <module name="Service_test" target="1.8" />
       <module name="SimRNA_main" target="1.8" />
       <module name="SimRNA_test" target="1.8" />
+      <module name="SimRNAWebApp_main" target="1.8" />
+      <module name="SimRNAWebApp_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -122,6 +122,7 @@ public class RenderingServiceHandler implements RenderingService {
         LOG.debug("SS Files: {}", ssFiles.length);
         LOG.debug("trafl Files: {}", traflFiles.length);
 
+
         if (pdbFiles.length > 0) {
 
             LOG.debug("PDB output file path: {}", pdbFiles[0].toPath().toString());

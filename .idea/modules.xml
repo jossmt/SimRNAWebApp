@@ -11,9 +11,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Service/Service.iml" filepath="$PROJECT_DIR$/.idea/modules/Service/Service.iml" group="Service" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Service/Service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Service/Service_main.iml" group="Service" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Service/Service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Service/Service_test.iml" group="Service" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SimRNA.iml" filepath="$PROJECT_DIR$/.idea/modules/SimRNA.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SimRNA_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SimRNA_main.iml" group="SimRNA" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SimRNA_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SimRNA_test.iml" group="SimRNA" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SimRNAWebApp.iml" filepath="$PROJECT_DIR$/.idea/modules/SimRNAWebApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SimRNAWebApp_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SimRNAWebApp_main.iml" group="SimRNAWebApp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SimRNAWebApp_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SimRNAWebApp_test.iml" group="SimRNAWebApp" />
     </modules>
   </component>
 </project>
