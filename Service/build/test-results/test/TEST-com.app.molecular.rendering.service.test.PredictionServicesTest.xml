@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.app.molecular.rendering.service.test.PredictionServicesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-08-14T21:50:19" hostname="Josss-MBP" time="0.006">
-  <properties/>
-  <testcase name="testPolling" classname="com.app.molecular.rendering.service.test.PredictionServicesTest" time="0.006"/>
-  <system-out><![CDATA[22:50:19.877 [Test worker] DEBUG c.a.m.r.s.t.PredictionServicesTest - Hello
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

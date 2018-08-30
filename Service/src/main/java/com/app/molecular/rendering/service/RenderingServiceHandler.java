@@ -118,44 +118,49 @@ public class RenderingServiceHandler implements RenderingService {
         final File[] pdbFiles = fileDirectory.listFiles(pdbFileFilter);
         final File[] ssFiles = fileDirectory.listFiles(ssFileFilter);
 
-        LOG.debug("PDB Files: {}", pdbFiles.length);
-        LOG.debug("SS Files: {}", ssFiles.length);
-        LOG.debug("trafl Files: {}", traflFiles.length);
+        if(pdbFiles != null) {
+            if (pdbFiles.length > 0) {
 
-        if (pdbFiles.length > 0) {
+                LOG.debug("PDB output file path: {}", pdbFiles[0].toPath().toString());
 
-            LOG.debug("PDB output file path: {}", pdbFiles[0].toPath().toString());
+                try {
+                    FileTime fileTime = Files.getLastModifiedTime(pdbFiles[0].toPath());
 
-            try {
-                FileTime fileTime = Files.getLastModifiedTime(pdbFiles[0].toPath());
+                    pollResponseBody.setLastUpdated(new Date(fileTime.toMillis()));
 
-                pollResponseBody.setLastUpdated(new Date(fileTime.toMillis()));
+                    final String path = pdbFiles[0].toPath().toString()
+                            .replace(ConfigConstants.ROOT_DIRECTORY, "");
 
-                final String path = pdbFiles[0].toPath().toString()
-                        .replace(ConfigConstants.ROOT_DIRECTORY, "");
+                    pollResponseBody.setPdbFilePath(path);
 
-                pollResponseBody.setPdbFilePath(path);
-
-            } catch (IOException e) {
-                e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
 
-        if (ssFiles.length > 0) {
+        if(ssFiles != null) {
+            if (ssFiles.length > 0) {
 
-            LOG.debug("SS output file path: {}", ssFiles[0].toPath().toString());
+                LOG.debug("SS output file path: {}", ssFiles[0].toPath().toString());
 
-            try {
-                String sequence = new String(Files.readAllBytes(ssFiles[0].toPath()));
+                try {
+                    String sequence = new String(Files.readAllBytes(ssFiles[0].toPath()));
 
-                pollResponseBody.setSecondaryStructure(sequence);
-            } catch (IOException e) {
-                e.printStackTrace();
+                    pollResponseBody.setSecondaryStructure(sequence);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
             }
-
         }
 
-        pollResponseBody.setProgress(traflFiles.length);
+        int length = 1;
+        if(traflFiles != null){
+            length = traflFiles.length;
+        }
+
+        pollResponseBody.setProgress(length);
 
         return pollResponseBody;
     }
