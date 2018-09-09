@@ -30,6 +30,7 @@
                 <div id="progressContainer">
                     <div class="inline" id="progressBar"></div>
                     <div class="inline" id="progressPercentage">1%</div>
+                    <div class="inline"><i id="cancelIcon" class="fa fa-close"></i></div>
                 </div>
                 <div>
                     <div class="inline">
@@ -124,6 +125,27 @@
         <%--<script src="<spring:url value="/resources/js/jquery-ui.min.js"/>"></script>--%>
         <script type="text/javascript">
 
+            $('#cancelIcon').click(function (e) {
+
+                var jobRef = window.location.pathname.split("/").pop()
+
+                alert(jobRef);
+
+                $.ajax({
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    type: "delete",
+                    url: "${pageContext.servletContext.contextPath}/cancel/" + jobRef,
+                    success: function (successResponse) {
+                        location.reload();
+                    },
+                    error: function (msg) {
+                        console.log("failed" + msg);
+                    }
+                })
+
+            });
 
             $('#downloadButton').click(function (e) {
                 e.preventDefault();

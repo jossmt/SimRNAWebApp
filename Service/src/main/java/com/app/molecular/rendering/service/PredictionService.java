@@ -16,6 +16,8 @@ public class PredictionService {
 
     public void executeScript(final String... arguments) {
 
+        LOG.debug("Executing Script: {}", arguments[0]);
+
         try {
 
             final Process process = new ProcessBuilder(arguments).directory(workingDirectory).start();

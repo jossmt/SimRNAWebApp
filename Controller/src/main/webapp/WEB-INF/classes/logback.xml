@@ -34,12 +34,12 @@
         <appender-ref ref="FILE-AUDIT"/>
     </logger>
 
-    <logger name="org.springframework" level="debug"
+    <logger name="org.springframework" level="error"
             additivity="false">
         <appender-ref ref="FILE-AUDIT"/>
     </logger>
 
-    <root level="ERROR">
+    <root level="DEBUG">
         <appender-ref ref="FILE-AUDIT"/>
     </root>
 

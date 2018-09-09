@@ -153,6 +153,16 @@ public class RestRequestHandler {
         return predictionResponseBody;
     }
 
+    @RequestMapping(value = "/cancel/{jobRef}", method = RequestMethod.DELETE, produces = "application/json")
+    public void cancelRequest(@PathVariable final String jobRef){
+
+        LOG.debug("Cancelling Job with reference: {}", jobRef);
+
+        renderingService.cancelRequest(jobRef);
+
+        LOG.debug("Successfully cancelled request");
+    }
+
     @RequestMapping(value = "/poll", method = RequestMethod.POST, consumes = "application/json",
             produces = "application/json")
     public @ResponseBody

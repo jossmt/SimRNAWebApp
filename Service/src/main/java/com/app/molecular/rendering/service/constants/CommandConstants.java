@@ -10,4 +10,5 @@ public class CommandConstants {
     public static final String GENERATE_TRAFL_SCRIPT = "GenerateTraflScript.sh";
     public static final String CONCAT_AND_CLUSTER_SCRIPT = "ConcatenateAndClusterScript.sh";
     public static final String CONVERT_TO_PDB_SCRIPT = "ConvertClusterToPdbScript.sh";
+    public static final String DELETE_SCRIPT = "DeleteRequest.sh";
 }

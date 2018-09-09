@@ -72,6 +72,13 @@ public class RenderingServiceHandler implements RenderingService {
     }
 
     @Override
+    public void cancelRequest(final String jobRef){
+
+        secondaryStructurePredictionService.cancelRequest(jobRef);
+
+    }
+
+    @Override
     public String initialiseStructurePrediction(final PredictionRequestBody predictionRequestBody) {
 
         LOG.debug("Initialising structure prediction");

@@ -16,4 +16,6 @@ public interface RenderingService {
     PollResponseBody pollForPDBFileOutput(String jobName);
 
     PredictionResponseBody getJobData(String jobRef);
+
+    void cancelRequest(String jobRef);
 }

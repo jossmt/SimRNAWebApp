@@ -28,9 +28,13 @@ public class SecondaryStructurePredictionService extends PredictionService {
 
         if (predictionRequestBody.getSecondaryStructure() != null) {
 
+            LOG.debug("Predicting with secondary structure");
+
             executeScript(CommandConstants.SHELL_COMMAND, CommandConstants.CREATE_SCRIPT, predictionRequestBody
                     .getJobName(), predictionRequestBody.getSequence(), predictionRequestBody.getSecondaryStructure());
         } else {
+
+            LOG.debug("Predicting without secondary structure");
 
             executeScript(CommandConstants.SHELL_COMMAND, CommandConstants.CREATE_SCRIPT, predictionRequestBody
                     .getJobName(), predictionRequestBody.getSequence());
@@ -39,6 +43,11 @@ public class SecondaryStructurePredictionService extends PredictionService {
         LOG.debug("Wrote sequence file data");
 
         return predictionRequestBody.getJobName();
+    }
+
+    public void cancelRequest(final String jobRef){
+
+        executeScript(CommandConstants.SHELL_COMMAND, CommandConstants.DELETE_SCRIPT, jobRef);
     }
 
     public void generateTraflFiles(final String jobName, final Integer iteration, final String secondaryStructure) {
