@@ -144,6 +144,8 @@ public class RestRequestHandler {
         final PredictionResponseBody predictionResponseBody = new PredictionResponseBody();
         predictionResponseBody.setRequestDate(new Date());
 
+        predictionRequestBody.setSequence(predictionRequestBody.getSequence().replaceAll("T", "U"));
+
         final String jobName = renderingService.initialiseStructurePrediction(predictionRequestBody);
         predictionResponseBody.setJobName(jobName);
         predictionResponseBody.setSequence(predictionRequestBody.getSequence());
@@ -154,8 +156,8 @@ public class RestRequestHandler {
     }
 
     @RequestMapping(value = "/cancel/{jobRef}", method = RequestMethod.DELETE,
-            consumes="appliation/json", produces = "application/json")
-    public void cancelRequest(@PathVariable final String jobRef){
+            consumes = "appliation/json", produces = "application/json")
+    public void cancelRequest(@PathVariable final String jobRef) {
 
         LOG.debug("Cancelling Job with reference: {}", jobRef);
 
